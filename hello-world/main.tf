@@ -1,11 +1,3 @@
-terraform {
-  required_version = ">= 0.12.26"
-}
-
-provider "aws" {
-  region = "eu-central-1"
-}
-
 resource "aws_instance" "example" {
   ami                    = "ami-07640f1f9d7e84676"
   instance_type          = "t2.micro"
